@@ -11,7 +11,10 @@
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "target": "ES2023",
-    "types": ["node", "jest"],
+    "types": [
+      "node",
+      "jest"
+    ],
     "sourceMap": true,
     "outDir": "./dist",
     "rootDir": ".",
@@ -19,5 +22,17 @@
     "skipLibCheck": true,
     "strict": true,
     "strictPropertyInitialization": false
-  }
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/nestor/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/nestor-batch/tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
 }
