@@ -4,8 +4,8 @@ import { NestorBatchService } from './nestor-batch.service';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [ConfigModule.forRoot()],
-  controllers: [NestorBatchController],
-  providers: [NestorBatchService],
+	imports: [ConfigModule.forRoot()],
+	controllers: [NestorBatchController],
+	providers: [NestorBatchService],
 })
 export class NestorBatchModule {}
