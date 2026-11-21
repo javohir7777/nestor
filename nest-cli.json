@@ -10,7 +10,7 @@
 	"monorepo": true,
 	"root": "apps/nestor-api",
 	"projects": {
-		"nestor": {
+		"nestor-api": {
 			"type": "application",
 			"root": "apps/nestor-api",
 			"entryFile": "main",
