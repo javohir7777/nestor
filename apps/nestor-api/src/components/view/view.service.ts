@@ -11,8 +11,6 @@ export class ViewService {
 
 	public async recordView(input: ViewInput): Promise<View | null> {
 		const viewExic = await this.checkViewExistence(input);
-		console.log(viewExic);
-		console.log(!viewExic);
 
 		if (!viewExic) {
 			console.log('- New View Insert -');
@@ -20,7 +18,7 @@ export class ViewService {
 		} else return null;
 	}
 
-	public async checkViewExistence(input: ViewInput): Promise<View | null> {
+	private async checkViewExistence(input: ViewInput): Promise<View | null> {
 		const { memberId, viewRefId } = input;
 		const search: T = { memberId: memberId, viewRefId: viewRefId };
 		return await this.viewModule.findOne(search).exec();
